@@ -29,8 +29,3 @@ class Empleado
     }
 
 }
-
-class EmpleadoAsalariado extends Empleado
-{
-
-}
