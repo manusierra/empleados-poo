@@ -15,5 +15,22 @@
 
 class Empleado
 {
+    protected $nombre;
+
+    protected $apellido1;
+
+    protected $numSS;
+
+    public function __construct($nombre, $apellido1, $numSS)
+    {
+        $this->nombre = $nombre;
+        $this->apellido1 = $apellido1;
+        $this->numSS = $numSS;
+    }
+
+}
+
+class EmpleadoAsalariado extends Empleado
+{
 
 }
