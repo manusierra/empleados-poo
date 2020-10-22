@@ -2,8 +2,6 @@
 
 // - La clase EmpleadoBaseMasComision (hereda de EmpleadoPorComisión) debe tener un salario base.
 
-include "empleadosComision.php";
-
 ?>
 
 <?php
@@ -38,3 +36,5 @@ class EmpleadoBaseMasComision extends EmpleadoPorComision
         return $this;
     }
 }
+
+// $atest = new EmpleadosBaseMascomision($_POST['nombre'], $_POST['apellido'], $_POST['numSS'], $_POST['comision'], $_POST['ventasBrutas'], $_POST['sueldoBase']);

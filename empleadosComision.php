@@ -2,8 +2,6 @@
 
 // - La clase EmpleadoPorComision (hereda de Empleado) debe tener una tasa de comisiones y ventas brutas.
 
-include "empleados.php";
-
 ?>
 
 <?php

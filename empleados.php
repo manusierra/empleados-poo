@@ -15,11 +15,9 @@
 
 class Empleado
 {
-    protected $nombre;
-
-    protected $apellido1;
-
-    protected $numSS;
+    public $nombre;
+    public $apellido1;
+    public $numSS;
 
     public function __construct($nombre, $apellido1, $numSS)
     {
@@ -87,4 +85,10 @@ class Empleado
 
         return $this;
     }
+
 }
+// $test = new Empleado($_POST['nombre'], $_POST['apellido'], $_POST['numSS']);
+
+// echo $test->getNombre();
+// echo $test->getApellido1();
+// echo $test->getNumSS();

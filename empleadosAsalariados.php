@@ -2,11 +2,6 @@
 
 // - La clase EmpleadoAsalariado (hereda de Empleado) debe tener un salario semanal.
 
-include "empleados.php";
-?>
-
-<?php
-
 class EmpleadoAsalariado extends Empleado
 {
     protected $salarioSemanal;
@@ -37,3 +32,6 @@ class EmpleadoAsalariado extends Empleado
         return $this;
     }
 }
+
+// $test2 = new EmpleadoAsalariado($_POST['numSS']);
+// echo $test2->getSalarioSemanal();
