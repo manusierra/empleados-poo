@@ -17,4 +17,23 @@ class EmpleadoAsalariado extends Empleado
         $this->salarioSemanal = $salarioSemanal;
     }
 
+    /**
+     * Get the value of salarioSemanal
+     */
+    public function getSalarioSemanal()
+    {
+        return $this->salarioSemanal;
+    }
+
+    /**
+     * Set the value of salarioSemanal
+     *
+     * @return  self
+     */
+    public function setSalarioSemanal($salarioSemanal)
+    {
+        $this->salarioSemanal = $salarioSemanal;
+
+        return $this;
+    }
 }

@@ -18,4 +18,23 @@ class EmpleadoBaseMasComision extends EmpleadoPorComision
         $this->salarioBase = $salarioBase;
     }
 
+    /**
+     * Get the value of salarioBase
+     */
+    public function getSalarioBase()
+    {
+        return $this->salarioBase;
+    }
+
+    /**
+     * Set the value of salarioBase
+     *
+     * @return  self
+     */
+    public function setSalarioBase($salarioBase)
+    {
+        $this->salarioBase = $salarioBase;
+
+        return $this;
+    }
 }

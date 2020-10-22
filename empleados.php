@@ -28,4 +28,63 @@ class Empleado
         $this->numSS = $numSS;
     }
 
+    /**
+     * Get the value of nombre
+     */
+    public function getNombre()
+    {
+        return $this->nombre;
+    }
+
+    /**
+     * Set the value of nombre
+     *
+     * @return  self
+     */
+    public function setNombre($nombre)
+    {
+        $this->nombre = $nombre;
+
+        return $this;
+    }
+
+    /**
+     * Get the value of apellido1
+     */
+    public function getApellido1()
+    {
+        return $this->apellido1;
+    }
+
+    /**
+     * Set the value of apellido1
+     *
+     * @return  self
+     */
+    public function setApellido1($apellido1)
+    {
+        $this->apellido1 = $apellido1;
+
+        return $this;
+    }
+
+    /**
+     * Get the value of numSS
+     */
+    public function getNumSS()
+    {
+        return $this->numSS;
+    }
+
+    /**
+     * Set the value of numSS
+     *
+     * @return  self
+     */
+    public function setNumSS($numSS)
+    {
+        $this->numSS = $numSS;
+
+        return $this;
+    }
 }

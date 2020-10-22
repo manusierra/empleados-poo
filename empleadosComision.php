@@ -21,4 +21,43 @@ class EmpleadoPorComision extends Empleado
         $this->ventasBrutas = $ventasBrutas;
     }
 
+    /**
+     * Get the value of comision
+     */
+    public function getComision()
+    {
+        return $this->comision;
+    }
+
+    /**
+     * Set the value of comision
+     *
+     * @return  self
+     */
+    public function setComision($comision)
+    {
+        $this->comision = $comision;
+
+        return $this;
+    }
+
+    /**
+     * Get the value of ventasBrutas
+     */
+    public function getVentasBrutas()
+    {
+        return $this->ventasBrutas;
+    }
+
+    /**
+     * Set the value of ventasBrutas
+     *
+     * @return  self
+     */
+    public function setVentasBrutas($ventasBrutas)
+    {
+        $this->ventasBrutas = $ventasBrutas;
+
+        return $this;
+    }
 }
