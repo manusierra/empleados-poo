@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Cree las siguientes clases: // - La clase Empleado debe tener un primer
+    nombre, apellido paterno y número de seguro social. // - La clase
+    EmpleadoAsalariado (hereda de Empleado) debe tener un salario semanal. // -
+    La clase EmpleadoPorHoras (hereda de Empleado) debe tener un sueldo y el
+    número de horas trabajadas. // - La clase EmpleadoPorComision (hereda de
+    Empleado) debe tener una tasa de comisiones y ventas brutas. // - La clase
+    EmpleadoBaseMasComision (hereda de EmpleadoPorComisión) debe tener un
+    salario base. // - Cada clase debe tener los constructores apropiados, los
+    métodos establecer y obtener. // Escriba un programa que cree instancias de
+    objetos de cada una de estas clases, y que muestre toda la información
+    asociada con cada objeto (incluyendo la información heredada) -->
+
+    <h2>Empleados</h2>
+
+    <form action="" method="post" id="empleado">
+      <label for="empleado">
+        Datos empleado: <br />
+        <input
+          type="text"
+          name="nombre"
+          id="empleado"
+          placeholder="Nombre"
+          value="Pepe"
+        /><br />
+        <input
+          type="text"
+          name="apellido"
+          id="empleado"
+          placeholder="Primer apellido..."
+          value="Martínez"
+        /><br />
+        <input
+          type="text"
+          name="numSS"
+          id="empleado"
+          placeholder="Número afiliación..."
+          value="123234345456567"
+        /><br />
+      </label>
+      <br /><br />
+      <label for="empleado">
+        Datos empleado asalariado: <br />
+        <input
+          type="text"
+          name="salarioSemanal"
+          id="empleado"
+          placeholder="Salario Semanal"
+          value="300"
+          onclick="vaciar()"
+        /><br /> </label
+      ><br /><br />
+      <label for="empleado">
+        Datos empleado por horas: <br />
+        <input
+          type="text"
+          name="sueldoHoras"
+          id="empleado"
+          placeholder="Sueldo horas..."
+          value="550"
+          onclick="vaciar()"
+        /><br />
+        <input
+          type="text"
+          name="numeroHoras"
+          id="empleado"
+          placeholder="Horas trabajadas..."
+          value="100"
+          onclick="vaciar()"
+        /><br /> </label
+      ><br /><br />
+      <label for="empleado">
+        Datos empleado a comisión: <br />
+        <input
+          type="text"
+          name="comision"
+          id="empleado"
+          placeholder="Comision..."
+          value="15"
+          onclick="vaciar()"
+        /><br />
+        <input
+          type="text"
+          name="ventasBrutas"
+          id="empleado"
+          placeholder="Ventas Brutas..."
+          value="15000"
+          onclick="vaciar()"
+        /><br /> </label
+      ><br /><br />
+      <label for="empleado">
+        Datos empleado con sueldo base a comisión: <br />
+        <input
+          type="text"
+          name="sueldoBase"
+          id="empleado"
+          placeholder="Sueldo Base..."
+          value="700"
+          onclick="vaciar()"
+        /><br />
+        <br /> </label
+      ><br /><br />
+    </form>
+
+    <script src="script.js" type="text/javascript"></script>
+  </body>
+</html>
