@@ -8,13 +8,15 @@
 
 class EmpleadoPorHoras extends Empleado
 {
+    // Atributos exclusivos de esta subclase.
+
     protected $sueldoHoras;
 
     protected $horasTrab;
 
     public function __construct($nombre, $apellido1, $numSS, $sueldoHoras, $horasTrab)
     {
-        parent::__construct($nombre, $apellido1, $numSS);
+        parent::__construct($nombre, $apellido1, $numSS); //importamos atributos de la clase padre.
         $this->sueldoHoras = $sueldoHoras;
         $this->horasTrab = $horasTrab;
     }

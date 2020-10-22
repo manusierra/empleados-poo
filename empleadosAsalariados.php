@@ -4,11 +4,11 @@
 
 class EmpleadoAsalariado extends Empleado
 {
-    protected $salarioSemanal;
+    protected $salarioSemanal; //atributo exclusivo de esta subclase.
 
     public function __construct($nombre, $apellido1, $numSS, $salarioSemanal)
     {
-        parent::__construct($nombre, $apellido1, $numSS);
+        parent::__construct($nombre, $apellido1, $numSS); // importamos atributos de la clase padre.
         $this->salarioSemanal = $salarioSemanal;
     }
 
@@ -32,6 +32,3 @@ class EmpleadoAsalariado extends Empleado
         return $this;
     }
 }
-
-// $test2 = new EmpleadoAsalariado($_POST['numSS']);
-// echo $test2->getSalarioSemanal();

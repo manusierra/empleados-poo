@@ -13,12 +13,15 @@
 
 // Establecemos la clase padre 'Empleado'.
 
-class Empleado
+class Empleado// Superclase.
+
 {
+    // Propiedades de la superclase
     public $nombre;
     public $apellido1;
     public $numSS;
 
+    // Construimos la superclase.
     public function __construct($nombre, $apellido1, $numSS)
     {
         $this->nombre = $nombre;
@@ -87,6 +90,7 @@ class Empleado
     }
 
 }
+// Comprobaciones rutinarias.
 // $test = new Empleado($_POST['nombre'], $_POST['apellido'], $_POST['numSS']);
 
 // echo $test->getNombre();

@@ -8,13 +8,16 @@
 
 class EmpleadoPorComision extends Empleado
 {
+
+    // Atributos exclusivos de empleado a comisión.
+
     protected $comision;
 
     protected $ventasBrutas;
 
     public function __construct($nombre, $apellido1, $numSS, $comision, $ventasBrutas)
     {
-        parent::__construct($nombre, $apellido1, $numSS);
+        parent::__construct($nombre, $apellido1, $numSS); // importamos atributos clase padre.
         $this->comision = $comision;
         $this->ventasBrutas = $ventasBrutas;
     }

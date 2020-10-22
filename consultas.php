@@ -1,5 +1,7 @@
 <?php
 
+// Enlazamos todos los archivo con clases para poder realizar las instancias.
+
 include "empleados.php";
 include "empleadosAsalariados.php";
 include "empleadosHoras.php";
@@ -18,7 +20,7 @@ echo "con número de afiliación: " . $datosEmpleado->getNumSS() . ".<br><br>";
 // Instancia y ejecución con Empleado asalariado.
 
 $asalariado = new EmpleadoAsalariado($_POST['nombre'], $_POST['apellido'], $_POST['numSS'], $_POST['salarioSemanal']);
-
+// No me funciona el condicional, sale sp, pero con los atributos en blanco... snifff!!!
 if (isset($_POST['salarioSemanal'])) {
     echo "El empleado <em>" . $datosEmpleado->getNombre() . " " . $datosEmpleado->getApellido1() . " </em> percibe un salario semanal de " . $asalariado->getSalarioSemanal() . "€.<br><br>";
 } else {

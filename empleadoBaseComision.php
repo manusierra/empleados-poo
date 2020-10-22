@@ -8,11 +8,11 @@
 
 class EmpleadoBaseMasComision extends EmpleadoPorComision
 {
-    protected $salarioBase;
+    protected $salarioBase; // Atributo exclusivo de esta clase.
 
     public function __construct($nombre, $apellido1, $numSS, $comision, $ventasBrutas, $salarioBase)
     {
-        parent::__construct($nombre, $apellido1, $numSS, $comision, $ventasBrutas);
+        parent::__construct($nombre, $apellido1, $numSS, $comision, $ventasBrutas); // Importamos propiedades de las clases padre.
         $this->salarioBase = $salarioBase;
     }
 
@@ -36,5 +36,3 @@ class EmpleadoBaseMasComision extends EmpleadoPorComision
         return $this;
     }
 }
-
-// $atest = new EmpleadosBaseMascomision($_POST['nombre'], $_POST['apellido'], $_POST['numSS'], $_POST['comision'], $_POST['ventasBrutas'], $_POST['sueldoBase']);
