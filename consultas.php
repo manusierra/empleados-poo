@@ -20,7 +20,7 @@ echo "con número de afiliación: " . $datosEmpleado->getNumSS() . ".<br><br>";
 // Instancia y ejecución con Empleado asalariado.
 
 $asalariado = new EmpleadoAsalariado($_POST['nombre'], $_POST['apellido'], $_POST['numSS'], $_POST['salarioSemanal']);
-// No me funciona el condicional, sale sp, pero con los atributos en blanco... snifff!!!
+// Sólo se muestra si existe. Probé con isset pero no funcionaba.
 if ($_POST['salarioSemanal'] != '') {
     echo "El empleado <em>" . $datosEmpleado->getNombre() . " " . $datosEmpleado->getApellido1() . " </em> percibe un salario semanal de " . $asalariado->getSalarioSemanal() . "€.<br><br>";
 }
