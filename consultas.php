@@ -21,20 +21,16 @@ echo "con número de afiliación: " . $datosEmpleado->getNumSS() . ".<br><br>";
 
 $asalariado = new EmpleadoAsalariado($_POST['nombre'], $_POST['apellido'], $_POST['numSS'], $_POST['salarioSemanal']);
 // No me funciona el condicional, sale sp, pero con los atributos en blanco... snifff!!!
-if (isset($_POST['salarioSemanal'])) {
+if ($_POST['salarioSemanal'] != '') {
     echo "El empleado <em>" . $datosEmpleado->getNombre() . " " . $datosEmpleado->getApellido1() . " </em> percibe un salario semanal de " . $asalariado->getSalarioSemanal() . "€.<br><br>";
-} else {
-    echo " ";
 }
 
 // Instancia y ejecución con Empleado por horas.
 
 $parcial = new EmpleadoPorHoras($_POST['nombre'], $_POST['apellido'], $_POST['numSS'], $_POST['sueldoHoras'], $_POST['numeroHoras']);
 
-if (isset($_POST['sueldoHoras']) && isset($_POST['numeroHoras'])) {
+if (($_POST['sueldoHoras'] != '') && ($_POST['numeroHoras'] != '')) {
     echo "El empleado <em>" . $datosEmpleado->getNombre() . " " . $datosEmpleado->getApellido1() . " </em> percibe un salario de " . $parcial->getSueldoHoras() . "€ por las horas trabajadas.<br><br>";
-} else {
-    echo " ";
 }
 
 // Instancia y ejecución con Empleado a comisión sobre un sueldo base.
@@ -43,8 +39,6 @@ $conComision = new EmpleadoPorComision($_POST['nombre'], $_POST['apellido'], $_P
 
 $sinComision = new EmpleadoBaseMasComision($_POST['nombre'], $_POST['apellido'], $_POST['numSS'], $_POST['comision'], $_POST['ventasBrutas'], $_POST['sueldoBase']);
 
-if (isset($_POST['comision']) && isset($_POST['sueldoBase'])) {
+if (($_POST['comision'] != '') && ($_POST['sueldoBase'] != '') && ($_POST['ventasBrutas'] != '')) {
     echo "El empleado <em>" . $datosEmpleado->getNombre() . " " . $datosEmpleado->getApellido1() . " </em> percibe un salario base de " . $sinComision->getSalarioBase() . "€ al que se le suma una comisión de " . $conComision->getComision() * $conComision->getVentasBrutas() . "€.<br><br>";
-} else {
-    echo " ";
 }
